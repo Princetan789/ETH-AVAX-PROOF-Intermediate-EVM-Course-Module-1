@@ -16,13 +16,22 @@ License: MIT
 #Functionalities
 
 
-In this contract, we have four functions: deposit(), withdraw(), unsafeWithdraw(), and failedWithdraw(). #deposit
+In this contract, we have four functions: deposit(), withdraw(), unsafeWithdraw(), and failedWithdraw(). 
 
-The deposit() function allows users to deposit a specified amount into their account. It uses the require() statement to check if the amount is greater than zero before updating the balance variable. #withdraw
+#deposit
 
-The withdraw() function allows users to withdraw a specified amount from their account. It uses the require() statement to check if the amount is greater than zero and if it's less than or equal to the current balance. If the conditions are met, it updates the balance variable. #unsafeWithdraw
+The deposit() function allows users to deposit a specified amount into their account. It uses the require() statement to check if the amount is greater than zero before updating the balance variable. 
 
-The unsafeWithdraw() function demonstrates the usage of assert() statements. It assumes that the inputs have already been validated elsewhere, and therefore it uses assert() to validate the inputs directly. If the conditions specified in the assert() statements are not met, it will result in a runtime error. #failedWithdraw
+#withdraw
+
+The withdraw() function allows users to withdraw a specified amount from their account. It uses the require() statement to check if the amount is greater than zero and if it's less than or equal to the current balance. If the conditions are met, it updates the balance variable.
+
+#unsafeWithdraw
+
+The unsafeWithdraw() function demonstrates the usage of assert() statements. It assumes that the inputs have already been validated elsewhere, and therefore it uses assert() to validate the inputs directly. If the conditions specified in the assert() statements are not met, it will result in a runtime error. 
+
+
+#failedWithdraw
 
 The failedWithdraw() function shows an example of using the revert() statement. It performs the same checks as the withdraw() function but intentionally fails by calling revert() with a custom error message. This will revert the transaction and provide an error message to the caller.
 
